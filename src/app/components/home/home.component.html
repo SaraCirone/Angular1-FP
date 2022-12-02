@@ -1,0 +1,9 @@
+<div class="container mt-4 text-center">
+    <h1 class="my-5"><span appHighlight>Benvenuto</span> sulla home page</h1>
+</div>
+<div class="container mt-5 d-flex justify-content-around align-items-center">
+    <button class="btn btn-primary me-5" [routerLink]="['/activePosts']" routerLinkActive="active">Active</button>
+    <button class="btn btn-success me-5" [routerLink]="['/addPost']" routerLinkActive="active">Add new Post</button>
+    <button class="btn btn-primary" [routerLink]="['/inactivePosts']" routerLinkActive="active">Inactive</button>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,9 @@
+<div class="card" [ngClass]="{ 'bg-warning': c!.type == 'news', 'bg-info': c!.type == 'education', 'bg-dark': c!.type == 'politic', 'text-white': c!.type == 'politic' }">
+    <h4 class="card-header"><span appHighlight>Post</span></h4>
+    <div class="card-body">
+        <h3 class="card-title">{{ c!.title | maiuscolo }}</h3>
+        <p class="card-text">{{ c!.body }}</p>
+        <p class="card-text">Categoria: {{ c!.type }}</p>
+        <p class="card-text">Autore: {{ c!.author }}</p>
+    </div>
+</div>
